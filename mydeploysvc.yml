@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: myonlineapp-svc
   labels:
-     app: myonlineapp
+     app: myjavaapp
 spec:
   type: NodePort
   ports:
@@ -11,6 +11,6 @@ spec:
     nodePort: 30001
     protocol: TCP
   selector:
-      app: myonlineapp
+      app: myjavaapp
  
   
